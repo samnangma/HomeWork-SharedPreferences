@@ -12,14 +12,16 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('Profile Screen', style: TextStyle(fontSize: 40),),
-            ElevatedButton(onPressed: () => clearSharedPreferences(), child: Text('Clear SharedPreferences'))
-          ],
-        ) ,
+    return Scaffold(
+      body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Profile Screen', style: TextStyle(fontSize: 40),),
+              ElevatedButton(onPressed: () => clearSharedPreferences(), child: Text('Clear SharedPreferences'))
+            ],
+          ) ,
+      ),
     );
   }
 }
